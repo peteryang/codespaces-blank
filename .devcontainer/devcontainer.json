@@ -14,6 +14,7 @@
       "davidanson.vscode-markdownlint",
       "hashicorp.terraform",
       "ms-azuretools.vscode-docker",
+      "GitHub.copilot",
       "redhat.ansible"
     ],
     "postCreateCommand": "/usr/bin/bash ./.devcontainer/post-install.sh"
