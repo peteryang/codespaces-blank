@@ -1,0 +1,20 @@
+{
+    "name": "terraform-codespaces",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu", 
+    "features": {
+      "ghcr.io/devcontainers/features/azure-cli:1": {}
+    },
+    "settings": {
+      "terminal.integrated.shell.linux": "/usr/bin/bash",
+      "workbench.colorTheme": "Default Dark+"
+    },
+    "extensions": [
+      "ms-vscode.vscode-node-azure-pack",
+      "eamodio.gitlens",
+      "davidanson.vscode-markdownlint",
+      "hashicorp.terraform",
+      "ms-azuretools.vscode-docker",
+      "redhat.ansible"
+    ],
+    "postCreateCommand": "/usr/bin/bash ./.devcontainer/post-install.sh"
+  }
